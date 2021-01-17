@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.facc.selab.mihaiapp.controllers.MainController">
+
+    <children>
+        <ImageView fitHeight="700.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/background_3.png" />
+            </image>
+        </ImageView>
+        <Pane layoutX="5.0" layoutY="561.0" prefHeight="106.0" prefWidth="1041.0">
+        </Pane>
+        <Pane fx:id="pane1" layoutX="5.0" layoutY="-1.0" prefHeight="668.0" prefWidth="1015.0">
+            <children>
+                <Label fx:id="country" alignment="CENTER" layoutX="54.0" layoutY="237.0" prefHeight="40.0" prefWidth="234.0" text="Country:" textFill="#ff7d7a">
+                    <font>
+                        <Font name="System Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Label fx:id="city" alignment="CENTER" layoutX="281.0" layoutY="237.0" prefHeight="40.0" prefWidth="183.0" text="City:" textFill="#ff7d7a">
+                    <font>
+                        <Font name="System Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="621.0" layoutY="210.0" prefHeight="31.0" prefWidth="104.0" text="WIND SPEED :" textFill="#ff7d7a">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="621.0" layoutY="309.0" prefHeight="31.0" prefWidth="104.0" text="PRESSURE:" textFill="#ff7d7a">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="621.0" layoutY="399.0" prefHeight="31.0" prefWidth="104.0" text="HUMIDITY:" textFill="#ff7d7a">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="614.0" layoutY="127.0" prefHeight="40.0" prefWidth="256.0" text="ADDITIONAL INFORMATION" textAlignment="CENTER" textFill="#ff7d7a">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                      <Label fx:id="windSpeed" alignment="CENTER" layoutX="794.0" layoutY="210.0" prefHeight="31.0" prefWidth="98.0" text="m/s" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="pressure" alignment="CENTER" layoutX="788.0" layoutY="309.0" prefHeight="31.0" prefWidth="98.0" text="hpa" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="humidity" alignment="CENTER" layoutX="788.0" layoutY="399.0" prefHeight="31.0" prefWidth="98.0" text="\%" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="countries" layoutX="96.0" layoutY="312.0" onAction="#comboAction" prefWidth="150.0" />
+            <ComboBox fx:id="cities" layoutX="298.0" layoutY="312.0" onAction="#comboAction" prefWidth="150.0" />
+            <ImageView fitHeight="119.0" fitWidth="104.0" layoutX="72.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cloud.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="name" alignment="CENTER" layoutX="107.0" layoutY="536.0" prefHeight="50.0" prefWidth="348.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="clock" alignment="CENTER" layoutX="681.0" layoutY="518.0" prefHeight="86.0" prefWidth="227.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="104.0" layoutX="158.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <Label fx:id="temperature" alignment="CENTER" layoutX="298.0" layoutY="378.0" prefHeight="86.0" prefWidth="135.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="weatherName" alignment="CENTER" layoutX="228.0" layoutY="467.0" prefHeight="50.0" prefWidth="208.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            </children>
+      </Pane>
+    </children>
+</AnchorPane>
